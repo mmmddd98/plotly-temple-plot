@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "plotly-temple-plot"
+version = "0.1.0"
+readme = "README.md"
+description = "Plotly implementation of a Temple-style fraction composition plot"
+requires-python = ">=3.10"
+
+dependencies = [
+    "plotly",
+    "numpy",
+    "dash"
+]
+
+[project.urls]
+Repository = "https://github.com/mmmddd98/plotly-temple-plot"
+
+[tool.setuptools.packages.find]
+include = ["temple_plot*"]
